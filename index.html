@@ -20,11 +20,56 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+		.flexcontainer {
+			display: flex;
+			align-items: center;
+		}
+		.people {
+			display: inline-block;
+		}
+		.people figure {
+			display: inline-block;
+		}
+		.people figcaption {
+			font-size: 14pt;
+			text-align: center;
+		}
+		.people figure img {
+				width: 120px;
+				height: 120px;
+				border-radius: 120px;
+				-webkit-border-radius: 120px;
+				-moz-border-radius: 120px;
+				box-shadow: 0 0 0px rgba(0, 0, 0, .2);
+				-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .2);
+				-moz-box-shadow: 0 0 0px rgba(0, 0, 0, .2);
+		}
+		span.big {
+			font-size: 100px;
+			font-weight: bold;
+			padding: 30px;
+		}
+		figcaption {
+		}
+	</style>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section data-background="img/bg.jpg">
+					<h2>Unearthed Hackathon</h2>
+					<h4>Perth 2017</h4>
+					<div class="people">
+						<figure class="portrait"><img data-src="img/sardi.png"/><figcaption>Jason Sardi</figcaption></figure>
+						<figure class="portrait"><img data-src="img/fazio.png"/><figcaption>Michael Fazio</figcaption></figure>
+						<figure class="portrait"><img data-src="img/crowley.png"/><figcaption>Jason Crowley</figcaption></figure>
+						<figure class="portrait"><img data-src="img/hicks.png"/><figcaption>Ben Hicks</figcaption></figure>
+					</div>
+					<p><h4>Team Rock Licker</h4></p>
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -45,5 +90,6 @@
 				]
 			});
 		</script>
+
 	</body>
 </html>
