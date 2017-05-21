@@ -53,13 +53,21 @@
 		}
 		figcaption {
 		}
+
+		html.blur.backgrounds {
+			-webkit-filter: blur(5px);
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(5px);
+		}
 	</style>
 
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/bg.jpg">
+				<section data-background="img/bg.jpg" data-background-color="#ff0000">
 					<h2>Unearthed Hackathon</h2>
 					<h4>Perth 2017</h4>
 					<div class="people">
@@ -79,17 +87,39 @@
 					<h3>Where are all the trucks?</h3>
 					<img src="img/moving_material.png"/>
 				</section>
+				<section data-background="img/money-down-toilet.jpg" data-background-color="#ff0000">
+					<h1>Annualised Cost</h1>
+					<h2>300 hours waiting for trucks</h2>
+					<h3>$5M (low grade)</h3>
+					<h3>$17M (high grade)</h3>
+				</section>
 				<section><h1>Insight #2</h1></section>
 				<section>
 					<h3>Not all chutes are created equal</h3>
 					<img height="450px" src="img/chute_blockages.png"/>
+				</section>
+				<section data-background="img/money-down-toilet.jpg" data-background-color="#ff0000">
+					<h1>Annualised Cost</h1>
+					<h3>$1.3M (low grade)</h3>
+					<h3>$4.5M (high grade)</h3>
 				</section>
 				<!--section>
 					<img height="450px" src="img/processed_lithology.png"/>
 				</section-->
 				<section><h1>Insight #3</h1></section>
 				<section>
-					<h3>Isolating </h3>
+					<h1>Electrical Isolations</h1>
+					<h3>At least one planned electrical isolation a week</h3>
+				</section>
+				<section data-background="img/electrician.jpg" data-background-color="#ff0000" data-state="blur">
+					<h3>Requires a qualified electrician</h3>
+					<h3 class="fragment">Isolation takes about 45 minutes to perform</h3>
+					<h3 class="fragment">Another 45 minutes to reverse...</h3>
+				</section>
+				<section data-background="img/money-down-toilet.jpg" data-background-color="#ff0000">
+					<h1>Annualised Cost</h1>
+					<h3>$1.4M (low grade)</h3>
+					<h3>$4.8M (high grade)</h3>
 				</section>
 			</div>
 		</div>
